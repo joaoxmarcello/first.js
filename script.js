@@ -10,15 +10,11 @@
 // log a frase final da função executada no console 
 
 function livro(nome, ano, autor) {
-    const nomeGrande = nome.toUpperCase();
-    const totalAnos = 2023 - ano;
-    const frase = nome + " por " + autor;
-    const objeto = {
-    nome: nomeGrande,
-    totalAnos,
-    frase,
+   return {
+    nome: nome.toUpperCase(),
+    totalAnos: 2023 - ano,
+    frase: nome + " por " + autor
    }
-   return objeto;
  }
 const Retorno = livro("O senhor dos Anéis", 1954 ,"J. R. R. Tolkien");
 console.log(Retorno.frase);
